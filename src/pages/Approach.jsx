@@ -118,33 +118,41 @@ export default function Approach() {
           <div className="mb-10 text-center xl:text-left">
             <h2 className="text-4xl font-outfit font-bold text-slate-900 mb-4 inline-block pb-2 border-b-2 border-blue-600">Life at Medhya</h2>
           </div>
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 lg:gap-16 items-center">
-            
-            {/* Cards Column */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
-              {lifeAtMedhyaData.map((data, idx) => (
-                <div 
-                  key={idx}
-                  onClick={() => setSelectedLifeCard(data)}
-                  className={`bg-white border border-slate-200 rounded-2xl p-6 lg:p-8 text-center cursor-pointer h-full flex flex-col group transition-all duration-300 ${data.cardHoverClass}`}
-                >
-                   <div className={`w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6 border transition-transform duration-500 group-hover:scale-110 ${data.iconWrapClass}`}>
-                     {data.icon}
-                   </div>
-                   <h3 className="text-lg font-outfit font-bold text-slate-800 mb-3">{data.title}</h3>
-                   <p className="text-slate-600 text-[14.5px] leading-[1.65] text-left flex-grow">
-                     {data.shortDesc}
-                   </p>
-                   <div className="mt-6 flex items-center justify-center gap-2 text-sm font-semibold uppercase tracking-wider text-slate-400 group-hover:text-blue-600 transition-colors">
-                     Read More <ArrowRight size={16} />
-                   </div>
-                </div>
-              ))}
-            </div>
+         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
+  {lifeAtMedhyaData.map((data, idx) => (
+    <div
+      key={idx}
+      onClick={() => setSelectedLifeCard(data)}
+      className={`group bg-white border border-slate-200 rounded-2xl p-6 lg:p-7 cursor-pointer flex flex-col h-full
+      transition-all duration-500 ease-out
+      hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)]
+      ${data.cardHoverClass}`}
+    >
+      
+      {/* Icon */}
+      <div className={`w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-5 border 
+      transition-all duration-500 group-hover:scale-110 ${data.iconWrapClass}`}>
+        {data.icon}
+      </div>
 
-          
+      {/* Title */}
+      <h3 className="text-lg font-outfit font-bold text-slate-900 mb-3 text-center">
+        {data.title}
+      </h3>
 
-          </div>
+      {/* Description */}
+      <p className="text-slate-600 text-[14.5px] leading-[1.7] text-center flex-grow">
+        {data.shortDesc}
+      </p>
+
+      {/* Footer */}
+      <div className="mt-6 flex items-center justify-center gap-2 text-sm font-semibold uppercase tracking-wider text-slate-400 group-hover:text-orange-500 transition-all duration-300 group-hover:translate-x-1">
+        Read More <ArrowRight size={16} />
+      </div>
+
+    </div>
+  ))}
+</div>
         </div>
       </section>
 
