@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { TrendingUp, Mail, Phone, MapPin,  Linkedin, Twitter, Instagram, Facebook, Youtube} from 'lucide-react';
+import { TrendingUp, Mail, Phone, MapPin, Linkedin, Twitter, Instagram, Facebook, Youtube } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -13,42 +13,46 @@ const Footer = () => {
               <span className="font-outfit text-2xl font-bold tracking-wide text-white">MEDHYA</span>
             </Link>
             <p className="text-slate-400 leading-relaxed mb-8 max-w-sm">
-              Your trusted financial partner delivering end-to-end financial solutions. 
+              Your trusted financial partner delivering end-to-end financial solutions.
               Built on a common objective to provide the best advisory in the market to build world-class companies.
             </p>
-           <div className="flex gap-4 flex-wrap">
-  <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-800 border border-slate-700 text-slate-400 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all shadow-sm">
-    <Linkedin size={20} />
-  </a>
+            <div className="flex gap-4 flex-wrap">
+              <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-800 border border-slate-700 text-slate-400 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all shadow-sm">
+                <Linkedin size={20} />
+              </a>
 
-  <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-800 border border-slate-700 text-slate-400 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all shadow-sm">
-    <Twitter size={20} />
-  </a>
+              <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-800 border border-slate-700 text-slate-400 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all shadow-sm">
+                <Twitter size={20} />
+              </a>
 
-  <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-800 border border-slate-700 text-slate-400 hover:bg-pink-500 hover:text-white hover:border-pink-500 transition-all shadow-sm">
-    <Instagram size={20} />
-  </a>
+              <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-800 border border-slate-700 text-slate-400 hover:bg-pink-500 hover:text-white hover:border-pink-500 transition-all shadow-sm">
+                <Instagram size={20} />
+              </a>
 
-  <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-800 border border-slate-700 text-slate-400 hover:bg-blue-700 hover:text-white hover:border-blue-700 transition-all shadow-sm">
-    <Facebook size={20} />
-  </a>
+              <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-800 border border-slate-700 text-slate-400 hover:bg-blue-700 hover:text-white hover:border-blue-700 transition-all shadow-sm">
+                <Facebook size={20} />
+              </a>
 
-  <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-800 border border-slate-700 text-slate-400 hover:bg-red-600 hover:text-white hover:border-red-600 transition-all shadow-sm">
-    <Youtube size={20} />
-  </a>
-</div>
+              <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-800 border border-slate-700 text-slate-400 hover:bg-red-600 hover:text-white hover:border-red-600 transition-all shadow-sm">
+                <Youtube size={20} />
+              </a>
+            </div>
           </div>
-          
+
           <div className="lg:col-span-2">
             <h4 className="font-outfit text-lg font-bold text-white mb-6 relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-1/2 after:h-0.5 after:bg-blue-500">Quick Links</h4>
             <ul className="flex flex-col gap-3 text-slate-400">
-              <li><Link to="/about" className="hover:text-blue-400 transition-colors">About Us</Link></li>
+                     <li><Link to="/" className="hover:text-blue-400 transition-colors">Home</Link></li>
+              <li><Link to="/about" className="hover:text-blue-400 transition-colors">About</Link></li>
               <li><Link to="/services" className="hover:text-blue-400 transition-colors">Services</Link></li>
-              <li><Link to="/team" className="hover:text-blue-400 transition-colors">Our Team</Link></li>
+               <li><Link to="/approach" className="hover:text-blue-400 transition-colors">Our Approach</Link></li>
+            
+              <li><Link to="/team" className="hover:text-blue-400 transition-colors">Team</Link></li>
               <li><Link to="/careers" className="hover:text-blue-400 transition-colors">Careers</Link></li>
+              <li><Link to="/contact" className="hover:text-blue-400 transition-colors">Contact Us</Link></li>
             </ul>
           </div>
-          
+
           <div className="lg:col-span-3">
             <h4 className="font-outfit text-lg font-bold text-white mb-6 relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-1/2 after:h-0.5 after:bg-blue-500">Services</h4>
             <ul className="flex flex-col gap-3 text-slate-400">
@@ -58,7 +62,7 @@ const Footer = () => {
               <li><Link to="/services" className="hover:text-blue-400 transition-colors">Risk Advisory</Link></li>
             </ul>
           </div>
-          
+
           <div className="lg:col-span-3">
             <h4 className="font-outfit text-lg font-bold text-white mb-6 relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-1/2 after:h-0.5 after:bg-blue-500">Contact Us</h4>
             <ul className="flex flex-col gap-4 text-slate-400">
@@ -77,7 +81,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="text-center pt-8 border-t border-slate-800 text-slate-500 text-sm">
           <p>&copy; {new Date().getFullYear()} Medhya Investment Advisors Private Limited. All rights reserved.</p>
         </div>

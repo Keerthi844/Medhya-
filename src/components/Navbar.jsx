@@ -57,7 +57,7 @@ const Navbar = () => {
           </div>
 
           <div className="hidden lg:flex">
-            <Link to="/contact" className="bg-gradient-to-r from-blue-700 to-blue-500 text-white font-outfit font-semibold uppercase tracking-wider text-sm px-6 py-2.5 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all">
+            <Link to="/contact" className="bg-gradient-to-r from-orange-700 to-orange-500 text-white font-outfit font-semibold uppercase tracking-wider text-sm px-6 py-2.5 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all">
               Get Started
             </Link>
           </div>

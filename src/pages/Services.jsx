@@ -7,9 +7,10 @@ const coreCards = [
     id: 'incubation',
     icon: <Lightbulb size={36} className="text-white" />,
     title: 'Incubation Idea Validation',
-    shortDesc: 'Strategic incubation support and concept validation to build a strong startup foundation.',
+    shortDesc: 'Strategic incubation support and concept validation to build a strong startup foundation.We help entrepreneurs transform ideas into viable business opportunities through structured validation.',
+    fullDesc: 'Our incubation services provide comprehensive support to transform your business idea into a viable, scalable venture. We guide entrepreneurs through every stage of ideation, concept validation, MVP development, and pitch preparation. Our team combines industry expertise with hands-on mentorship to help you identify market opportunities, differentiate your offering, validate product-market fit, and build a strong foundation for sustainable growth. Whether you are at the pre-startup stage or preparing for funding, we provide the strategic guidance and mentorship you need to succeed.',
     image: '/images/team-collaboration.png',
-    themeColor: 'bg-[#207a34]',
+    themeColor: 'bg-orange-500',
     features: [
       'Pre-startup Stage Advisory (Ideation/ Conceptualization/ Requirements)',
       'Incubation Advisory (Pitch/MVP)',
@@ -23,7 +24,8 @@ const coreCards = [
     id: 'valuation',
     icon: <PieChart size={36} className="text-white" />,
     title: 'Valuation',
-    shortDesc: 'Expert business and startup valuation for strategic decisions.',
+    shortDesc: 'Expert business and startup valuation for strategic decisions.Accurate and reliable valuation services to determine the true worth of businesses and startups, supporting strategic decisions.',
+    fullDesc: 'Accurate valuation is critical for fundraising, M&A transactions, equity grants, and strategic business decisions. Our expert team uses industry-leading methodologies and comparable market data to determine the true value of your business or startup. We provide valuations for various purposes including investment rounds, acquisitions, ESOP planning, family disputes, and regulatory compliance. With deep understanding of Indian regulatory frameworks (RBI, SEBI, Income Tax), we ensure your valuation is credible with investors, lenders, and stakeholders.',
     image: '/images/business-discussion.png',
     themeColor: 'bg-[#1c8446]',
     features: [
@@ -39,9 +41,10 @@ const coreCards = [
     id: 'transaction-advisory',
     icon: <ShieldCheck size={36} className="text-white" />,
     title: 'Transaction Advisory',
-    shortDesc: 'End-to-end transaction support including revenue and financial models.',
+    shortDesc: 'End-to-end transaction support including revenue and financial models.End-to-end transaction advisory services to support businesses in financial planning, deal structuring, due diligence.',
+    fullDesc: 'Whether you are acquiring, merging, raising capital, or exiting your business, our transaction advisory team provides comprehensive support at every stage. We deliver expert financial and business due diligence, deal structuring, valuation analysis, buyer/seller guidance, and integration planning. Our services include financial modeling, risk assessment, regulatory compliance, legal coordination, and post-closure optimization. We work with investors, founders, and corporations to ensure successful transactions that maximize value and minimize risk.',
     image: '/images/office-workspace.png',
-    themeColor: 'bg-[#22a66e]',
+    themeColor: 'bg-blue-500',
     features: [
       'Revenue Model',
       'Financial Model',
@@ -56,7 +59,8 @@ const coreCards = [
     id: 'management-consultancy',
     icon: <Briefcase size={36} className="text-white" />,
     title: 'Management Consultancy',
-    shortDesc: 'Strategic guidance for corporate development and board objectives.',
+    shortDesc: 'Strategic guidance for corporate development and board objectives.Strategic management consultancy services to help businesses enhance performance, optimize operations.',
+    fullDesc: 'Our management consultancy services help organizations optimize performance, accelerate growth, and achieve strategic objectives. We partner with leadership teams to develop comprehensive business strategies, enhance operational efficiency, strengthen corporate governance, and build high-performing organizations. From business development and market entry to organizational restructuring and board advisory, we provide practical, actionable insights backed by industry best practices. Our approach combines deep sector expertise with change management excellence.',
     image: '/images/contact-advisor.png',
     themeColor: 'bg-[#1ab8a0]',
     features: [
@@ -72,7 +76,8 @@ const coreCards = [
     id: 'outsourcing',
     icon: <Globe size={36} className="text-white" />,
     title: 'Outsourcing',
-    shortDesc: 'Comprehensive support for accounting, tax, and legal requirements.',
+    shortDesc: 'Comprehensive support for accounting, tax, and legal requirements.Comprehensive outsourcing solutions to manage accounting, taxation, compliance, and operational processes efficiently.',
+    fullDesc: 'Streamline your operations by outsourcing accounting, tax, compliance, and legal functions to our expert team. We handle company incorporation, statutory filings, payroll processing, GST/income tax compliance, audit support, and regulatory reporting. Our comprehensive approach ensures compliance with Indian laws and regulations while reducing operational burden and cost. Let us manage the back-office functions so you can focus on core business growth.',
     image: '/images/contact-header.png',
     themeColor: 'bg-[#10b1ca]',
     features: [
@@ -88,9 +93,10 @@ const coreCards = [
     id: 'company-management',
     icon: <Settings size={36} className="text-white" />,
     title: 'Company Management',
-    shortDesc: 'Virtual CFO and deep financial strategy solutions.',
+    shortDesc: 'Virtual CFO and deep financial strategy solutions.Comprehensive company management services, including Virtual CFO support, to streamline financial operations.',
+    fullDesc: 'Our Virtual CFO services provide institutional-grade financial leadership without the overhead of a full-time hire. We serve as your trusted financial partner, handling financial strategy and planning, cash flow management, budgeting and forecasting, financial reporting and MIS, audit coordination, and stakeholder communication. From startups raising their first round to established companies optimizing operations, we provide the financial expertise and accountability you need to make informed decisions and drive profitable growth.',
     image: '/images/contact-exterior.png',
-    themeColor: 'bg-[#0f8bcc]',
+    themeColor: 'bg-pink-500',
     features: [
       'Interim CFO Services',
       'Financial Strategy & Management',
@@ -282,7 +288,7 @@ export default function Services() {
           {/* Title */}
           <h1 className="text-[clamp(2rem,4vw,3rem)] font-outfit font-bold text-white mb-3">
             Our Service{" "}
-            <span className="bg-gradient-to-br from-blue-400 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-br from-blue-400 to-orange-500 bg-clip-text text-transparent">
               Offerings
             </span>
           </h1>
@@ -311,7 +317,7 @@ export default function Services() {
                 <div className={`absolute top-0 left-0 w-full h-2 ${service.themeColor} opacity-80 group-hover:opacity-100 transition-opacity`}></div>
 
                 {/* Background faint tint on hover */}
-                <div className={`absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity duration-700 ${service.themeColor}`}></div>
+                <div className={`absolute inset-0 opacity-0 group-hover:opacity-40 transition-opacity duration-700 ${service.themeColor}`}></div>
 
                 <div className="relative z-10 flex-grow">
                   <div className={`w-16 h-16 rounded-[1.25rem] flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-500 ${service.themeColor} text-white`}>
@@ -405,9 +411,8 @@ export default function Services() {
                 {activeData.blocks.map((block, idx) => (
                   <div
                     key={idx}
-                    className={`animate-on-tab opacity-0 translate-y-8 flex flex-col ${
-                      block.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'
-                    } gap-6 sm:gap-8 lg:gap-12 items-start lg:items-center`}
+                    className={`animate-on-tab opacity-0 translate-y-8 flex flex-col ${block.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'
+                      } gap-6 sm:gap-8 lg:gap-12 items-start lg:items-center`}
                   >
                     {/* Content */}
                     <div className="w-full lg:w-1/2">
@@ -433,9 +438,8 @@ export default function Services() {
 
                     {/* Image */}
                     <div className="w-full lg:w-1/2">
-                      <div className={`rounded-xl sm:rounded-2xl lg:rounded-[2.5rem] lg:rounded-[3rem] overflow-hidden shadow-lg lg:shadow-[0_20px_50px_rgba(0,0,0,0.08)] relative ${
-                        block.imageHeight ? 'aspect-[3/4]' : 'aspect-[4/3]'
-                      } group border border-slate-200 lg:border-[6px] lg:border-white`}>
+                      <div className={`rounded-xl sm:rounded-2xl lg:rounded-[2.5rem] lg:rounded-[3rem] overflow-hidden shadow-lg lg:shadow-[0_20px_50px_rgba(0,0,0,0.08)] relative ${block.imageHeight ? 'aspect-[3/4]' : 'aspect-[4/3]'
+                        } group border border-slate-200 lg:border-[6px] lg:border-white`}>
                         <img src={block.image} alt={block.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s] ease-out" />
                         <div className="absolute inset-0 bg-[#52b12c]/5 mix-blend-multiply group-hover:bg-transparent transition-colors duration-700"></div>
                         <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-xl sm:rounded-2xl lg:rounded-[2.5rem] lg:rounded-[3rem]"></div>
@@ -458,7 +462,13 @@ export default function Services() {
 
             {/* Image Section - Visible on all screens now */}
             <div className="w-full md:w-5/12 aspect-video md:aspect-auto md:h-full relative shrink-0">
-              <img src={selectedService.image} alt={selectedService.title} className="w-full h-full object-cover" />
+<div className="w-full h-64 sm:h-80 md:h-96 lg:h-[530px]">
+  <img
+    src={selectedService.image}
+    alt={selectedService.title}
+    className="w-full h-full object-cover"
+  />
+</div>
               <div className={`absolute inset-0 opacity-80 mix-blend-multiply ${selectedService.themeColor}`}></div>
               <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 via-slate-900/40 to-transparent"></div>
 
@@ -492,6 +502,12 @@ export default function Services() {
               </div>
 
               <div className="pr-1 md:pr-4 flex-grow">
+                {selectedService.fullDesc && (
+                  <div className="mb-8 pb-6 border-b border-slate-100">
+                    <p className="text-slate-700 text-sm sm:text-base leading-relaxed">{selectedService.fullDesc}</p>
+                  </div>
+                )}
+
                 <div className="mb-6">
                   <h4 className="text-lg sm:text-xl md:text-2xl font-outfit font-bold text-slate-900 mb-5 flex items-center gap-3">
                     <div className={`w-1.5 h-6 rounded-full shadow-sm ${selectedService.themeColor}`}></div>

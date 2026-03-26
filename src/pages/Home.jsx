@@ -12,9 +12,9 @@ export default function Home() {
   const [activeCfoService, setActiveCfoService] = useState(0);
 
   const virtualCfoServices = [
-    { title: "Financial Advisory", desc: "Expert advisory for strategic growth, M&A, and financial structuring to maximize business value.Empowering businesses and individuals with expert financial guidance, data-driven insights, and tailored strategies to achieve long-term success.", img: "/images/office-workspace.png", bullets: ["Strategic Financial Planning", "Capital & Debt Structuring", "M&A Financial Feasibility"] },
-    { title: "Financial Projections", desc: "Robust financial modeling to forecast revenue, expenses, and growth scenarios for strategic planning.Our projections are built on realistic assumptions, market trends, and your business objectives—enabling you to make informed strategic decisions and present credible financials to investors and stakeholders.", img: "/images/business-discussion.png", bullets: ["Revenue Growth Forecasting", "Scenario & Sensitivity Analysis", "Long-term Business Modeling"] },
-    { title: "Cash Flow Projections", desc: "Accurate cash flow forecasting to ensure liquidity, manage working capital, and avoid financial crunches.By analyzing your revenue cycles, expense patterns, and growth plans, we create structured cash flow models that ensure your business remains financially agile and prepared for both opportunities and challenges.", img: "/images/team-collaboration.png", bullets: ["Working Capital Optimization", "Daily/Weekly Cash Formatting", "Liquidity Risk Management"] },
+    { title: "Financial Advisory", desc: "Expert advisory for strategic growth, M&A, and financial structuring to maximize business value.Empowering businesses and individuals with expert financial guidance, data-driven insights, and tailored strategies to achieve long-term success.We provide strategic financial advisory solutions to help businesses make informed decisions, optimize financial performance, and achieve sustainable growth. Our expertise spans planning, structuring, risk management, and value creation", img: "/images/office-workspace.png", bullets: ["Strategic Financial Planning", "Capital & Debt Structuring", "M&A Financial Feasibility"] },
+    { title: "Financial Projections", desc: "Robust financial modeling to forecast revenue, expenses, and growth scenarios for strategic planning.Our projections are built on realistic assumptions, market trends, and your business objectives—enabling you to make informed strategic decisions and present credible financials to investors and stakeholders.We develop detailed financial projections to forecast revenue, expenses, and profitability, enabling businesses to plan effectively, secure funding, and make data-driven strategic decisions.", img: "/images/business-discussion.png", bullets: ["Revenue Growth Forecasting", "Scenario & Sensitivity Analysis", "Long-term Business Modeling"] },
+    { title: "Cash Flow Projections", desc: "Accurate cash flow forecasting to ensure liquidity, manage working capital, and avoid financial crunches.By analyzing your revenue cycles, expense patterns, and growth plans, we create structured cash flow models that ensure your business remains financially agile and prepared for both opportunities and challenges.We develop accurate cash flow projections to track inflows and outflows, ensuring liquidity, financial stability, and better planning for day-to-day operations and long-term growth.", img: "/images/team-collaboration.png", bullets: ["Working Capital Optimization", "Daily/Weekly Cash Formatting", "Liquidity Risk Management"] },
     { title: "Budgeting", desc: "Comprehensive budgeting frameworks to control costs, set financial targets, and track operational performance.At Medhya Investments, our Budgeting services are designed to help businesses and individuals manage their finances with clarity and control. We create structured budgets that align with your strategic objectives, ensuring optimal allocation of resources and improved financial discipline.", img: "/images/contact-advisor.png", bullets: ["Department-wise Budgeting", "Zero-based Budgeting", "Quarterly Reforecasting"] },
     { title: "Cost Management", desc: "Strategic cost analysis and reduction initiatives to improve profit margins and operational efficiency.At Medhya Investments, our Cost Management services help businesses gain better control over their expenses while maintaining operational excellence. We analyze your cost structures, identify inefficiencies, and implement strategies to optimize spending without compromising quality or growth.", img: "/images/office-workspace.png", bullets: ["Overhead Cost Reduction", "Process Efficiency Analysis", "Vendor Negotiation Support"] },
     { title: "Audit Support", desc: "End-to-end support for statutory, internal, and tax audits, ensuring compliance and smooth execution.At Medhya Investments, our Audit Support services are designed to help businesses navigate audits with confidence and ease. We assist in preparing, organizing, and reviewing financial records to ensure accuracy, transparency, and compliance with regulatory requirements.", img: "/images/business-discussion.png", bullets: ["Audit Readiness Check", "Coordination with External Auditors", "Resolving Audit Qualifications"] },
@@ -127,7 +127,7 @@ export default function Home() {
           />
 
           {/* Dark Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-blue-900/60 to-black/70"></div>
+         <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-blue-900/60 to-orange-500/60"></div>
         </div>
 
         {/* Content */}
@@ -136,7 +136,7 @@ export default function Home() {
           <h1 className="text-[clamp(3rem,6vw,5rem)] font-extrabold leading-tight tracking-tight text-white">
             Medhya Investments
           </h1>
-          <h2 className="mt-4 text-[clamp(1.2rem,2.5vw,2rem)] font-medium text-blue-100">
+          <h2 className="mt-4 text-[clamp(1.2rem,2.5vw,2rem)] font-medium text-orange-500">
             Empowering Wealth, Enabling Growth
           </h2>
 
@@ -187,20 +187,20 @@ export default function Home() {
                 key={service.id}
                 onClick={() => handleServiceClick(service.id)}
                 className="group cursor-pointer relative overflow-hidden rounded-2xl border border-slate-200 bg-white flex flex-col items-center justify-center h-full
-      transition-all duration-500 ease-out
-      hover:bg-blue-50 hover:border-blue-200
-      hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(37,99,235,0.15)]
-      active:-translate-y-2 active:shadow-[0_20px_40px_rgba(37,99,235,0.15)]
+                 transition-all duration-500 ease-out
+                 hover:bg-blue-50 hover:border-blue-200
+                 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(37,99,235,0.15)]
+                active:-translate-y-2 active:shadow-[0_20px_40px_rgba(37,99,235,0.15)]
       p-4 sm:p-5 md:p-6"
                 style={{ transitionDelay: `${idx * 100}ms` }}
               >
 
-                {/* 🔥 Top Gradient Line */}
-                <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                {/* Top Gradient Line */}
+                <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-blue-500 via-orange-400 to-orange-600 opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
 
                 {/* Icon */}
                 <div className="w-16 sm:w-20 h-16 sm:h-20 rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500">
-                  {service.icon}
+                  {React.cloneElement(service.icon, { className: "text-orange-500", size: 28 })}
                 </div>
 
                 {/* Content */}
@@ -284,7 +284,7 @@ export default function Home() {
               {/* Enlarged Image Header */}
               <div className="w-full h-[200px] sm:h-[300px] md:h-[400px] shrink-0 rounded-2xl overflow-hidden shadow-md relative group cursor-pointer aspect-video">
                 <img src={virtualCfoServices[activeCfoService].img} alt={virtualCfoServices[activeCfoService].title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-blue-900/10 mix-blend-multiply group-hover:bg-transparent transition-colors duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-green-600/10 to-orange-500/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-500"></div>
               </div>
 
               <div className="flex-1 flex flex-col">
@@ -455,7 +455,7 @@ export default function Home() {
                 </p>
 
                 {/* Hover Bottom Line */}
-               <div className="absolute bottom-0 left-0 w-full md:w-0 h-1 bg-gradient-to-r from-orange-500 to-orange-400 md:group-hover:w-full transition-all duration-500 rounded-b-2xl"></div>
+                <div className="absolute bottom-0 left-0 w-full md:w-0 h-1 bg-gradient-to-r from-orange-500 to-orange-400 md:group-hover:w-full transition-all duration-500 rounded-b-2xl"></div>
               </div>
             ))}
           </div>
@@ -696,7 +696,7 @@ export default function Home() {
           <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-8">
             Our team comprises dynamic professionals with broad expertise from various streams including Chartered Accountants, Company Secretaries, Certified Public Accountants, Ex-Bankers, Management Graduates & Legal teams.
           </p>
-          <div className="max-w-4xl mx-auto p-8 rounded-2xl bg-blue-50 border border-blue-100 mb-10">
+          <div className="max-w-4xl mx-auto p-8 rounded-2xl bg-orange-100 border border-blue-100 mb-10">
             <p className="font-outfit text-xl md:text-2xl font-semibold text-blue-900 tracking-wide">
               "WE ARE BUILT ON A COMMON OBJECTIVE TO PROVIDE THE BEST ADVISORY IN THE MARKET TO BUILD WORLD CLASS COMPANIES."
             </p>

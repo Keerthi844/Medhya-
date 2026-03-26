@@ -7,49 +7,56 @@ const successFactors = [
     text: "ector Specific Experienced Advisory Board",
     icon: <Users size={28} strokeWidth={1.5} />,
     title: "Sector Specific Experienced Advisory Board",
-    content: "Our advisory board comprises industry veterans with decades of specialized experience across diverse sectors. They provide invaluable strategic foresight, regulatory guidance, and deep market insights, ensuring that our investment strategies are not just theoretically sound, but practically viable and ahead of industry curves."
+    content: "Our advisory board comprises industry veterans with decades of specialized experience across diverse sectors. They provide invaluable strategic foresight, regulatory guidance, and deep market insights, ensuring that our investment strategies are not just theoretically sound, but practically viable and ahead of industry curves.",
+    image: 'team-collaboration'
   },
   {
     letter: 'U',
     text: "nderstanding Your Business Need",
     icon: <Lightbulb size={28} strokeWidth={1.5} />,
     title: "Understanding Your Business Need",
-    content: "We don't believe in one-size-fits-all solutions. Our approach begins with a profound dive into your unique business model, operational challenges, and long-term aspirations. By fully comprehending your specific ecosystem, we tailor financial strategies and capital structures that align perfectly with your fundamental goals."
+    content: "We don't believe in one-size-fits-all solutions. Our approach begins with a profound dive into your unique business model, operational challenges, and long-term aspirations. By fully comprehending your specific ecosystem, we tailor financial strategies and capital structures that align perfectly with your fundamental goals.",
+    image: 'business-discussion'
   },
   {
     letter: 'C',
     text: "ontacts with Angel Investors / VC / PE",
     icon: <Network size={28} strokeWidth={1.5} />,
     title: "Contacts with Angel Investors / VC / PE",
-    content: "Leverage our extensive global network of high-net-worth individuals, Venture Capitalists, and Private Equity firms. We bridge the gap between innovative startups and visionary capital, facilitating introductions, structuring pitch decks, and negotiating terms that protect founders while satisfying investor mandates."
+    content: "Leverage our extensive global network of high-net-worth individuals, Venture Capitalists, and Private Equity firms. We bridge the gap between innovative startups and visionary capital, facilitating introductions, structuring pitch decks, and negotiating terms that protect founders while satisfying investor mandates.",
+    image: 'office-workspace'
   },
   {
     letter: 'C',
     text: "ombined experience of more than 2 decades",
     icon: <Clock size={28} strokeWidth={1.5} />,
     title: "Combined experience of more than 2 decades",
-    content: "Our core team brings over 20 years of cumulative expertise in corporate finance, investment banking, and strategic advisory. This depth of experience means we have navigated multiple economic cycles, allowing us to foresee risks, identify hidden opportunities, and execute complex transactions with unwavering precision."
+    content: "Our core team brings over 20 years of cumulative expertise in corporate finance, investment banking, and strategic advisory. This depth of experience means we have navigated multiple economic cycles, allowing us to foresee risks, identify hidden opportunities, and execute complex transactions with unwavering precision.",
+    image: 'contact-advisor'
   },
   {
     letter: 'E',
     text: "xperienced & Dedicated Outsourced Team",
     icon: <Briefcase size={28} strokeWidth={1.5} />,
     title: "Experienced & Dedicated Outsourced Team",
-    content: "Scale your operations without the overhead. Our dedicated outsourced teams act as an extension of your own company, handling critical financial, accounting, and compliance functions. Led by seasoned professionals, our teams ensure operational excellence, allowing your leadership to focus purely on strategic growth."
+    content: "Scale your operations without the overhead. Our dedicated outsourced teams act as an extension of your own company, handling critical financial, accounting, and compliance functions. Led by seasoned professionals, our teams ensure operational excellence, allowing your leadership to focus purely on strategic growth.",
+    image: 'contact-header'
   },
   {
     letter: 'S',
     text: "trategically located in India, connects with USA & Middle East",
     icon: <Globe size={28} strokeWidth={1.5} />,
     title: "Strategically located in India, connects with USA & Middle East",
-    content: "Headquartered in India with strong active channels across the USA and the Middle East, we are perfectly positioned to manage cross-border investments and international scaling. Our geographic footprint allows us to navigate complex multi-jurisdictional regulations and tap into diverse global capital markets seamlessly."
+    content: "Headquartered in India with strong active channels across the USA and the Middle East, we are perfectly positioned to manage cross-border investments and international scaling. Our geographic footprint allows us to navigate complex multi-jurisdictional regulations and tap into diverse global capital markets seamlessly.",
+    image: 'contact-exterior'
   },
   {
     letter: 'S',
     text: "trong Experienced Execution Team",
     icon: <Target size={28} strokeWidth={1.5} />,
     title: "Strong Experienced Execution Team",
-    content: "Strategy is useless without execution. Our robust execution team is trained to deliver under pressure, ensuring that every financial model, DD report, and fund-raise mandate is closed efficiently. From initial term sheets to final disbursement, we handle the rigorous operational heavy-lifting to get the deal done."
+    content: "Strategy is useless without execution. Our robust execution team is trained to deliver under pressure, ensuring that every financial model, DD report, and fund-raise mandate is closed efficiently. From initial term sheets to final disbursement, we handle the rigorous operational heavy-lifting to get the deal done.",
+    image: 'office-workspace'
   },
 ];
 
@@ -227,29 +234,46 @@ export default function About() {
       {selectedFactor && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
           <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onClick={() => setSelectedFactor(null)}></div>
-          <div className="relative bg-white w-full max-w-xl rounded-2xl sm:rounded-3xl shadow-2xl p-5 sm:p-6 md:p-8 md:p-10 animate-[fadeIn_0.3s_ease-out_forwards] max-h-[90vh] overflow-y-auto custom-scrollbar">
-            <button
-              onClick={() => setSelectedFactor(null)}
-              className="absolute top-5 right-5 p-2 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-slate-900 transition-colors"
-            >
-              <X size={24} />
-            </button>
-
-            <div className="w-16 h-16 rounded-2xl bg-orange-50 flex items-center justify-center mb-6 shadow-inner border border-orange-100">
-              {React.cloneElement(selectedFactor.icon, { size: 32, className: "text-orange-600" })}
+          <div className="relative bg-white w-full max-w-5xl rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden animate-[fadeIn_0.3s_ease-out_forwards] max-h-[90vh] flex flex-col md:flex-row">
+            
+            {/* Mobile/Tablet: Image on top */}
+            <div className="w-full md:hidden aspect-video relative overflow-hidden group">
+              <img src={`/images/${selectedFactor.image}.png`} alt={selectedFactor.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+              
+              <button
+                onClick={() => setSelectedFactor(null)}
+                className="absolute top-4 right-4 p-2 rounded-full bg-white text-slate-500 hover:bg-slate-100 transition-colors z-10"
+              >
+                <X size={24} />
+              </button>
             </div>
 
-            <h2 className="text-2xl md:text-3xl font-outfit font-bold text-slate-900 mb-4">{selectedFactor.title}</h2>
-            <div className="w-12 h-1.5 bg-gradient-to-r from-orange-400 to-orange-600 mb-6 rounded-full"></div>
+            {/* Desktop: Image side */}
+            <div className="hidden md:block w-full md:w-5/12  relative overflow-hidden group">
+              <img src={`/images/${selectedFactor.image}.png`} alt={selectedFactor.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-r from-slate-900/40 to-transparent"></div>
+            </div>
 
-            <p className="text-lg text-slate-600 leading-relaxed mb-8">
-              {selectedFactor.content}
-            </p>
+            {/* Content Section */}
+            <div className="w-full md:w-7/12 p-5 sm:p-8 md:p-10 lg:p-12 flex flex-col overflow-y-auto relative">
+              <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-outfit font-bold text-slate-900 mb-6 flex items-center gap-4">
+                <div className="w-12 h-12 rounded-xl bg-orange-50 flex items-center justify-center shadow-inner border border-orange-100 shrink-0">
+                  {React.cloneElement(selectedFactor.icon, { size: 28, className: "text-orange-600" })}
+                </div>
+                {selectedFactor.title}
+              </h2>
+              <div className="w-12 h-1.5 bg-gradient-to-r from-orange-400 to-orange-600 mb-6 rounded-full"></div>
 
-            <div className="mt-8 pt-6 border-t border-slate-100 flex justify-end">
-              <button onClick={() => setSelectedFactor(null)} className="px-6 py-3 rounded-xl bg-slate-900 text-white font-outfit font-semibold hover:bg-orange-500 shadow-md transition-colors">
-                Close
-              </button>
+              <p className="text-base sm:text-lg lg:text-lg text-slate-600 leading-relaxed mb-8 flex-grow">
+                {selectedFactor.content}
+              </p>
+
+              <div className="mt-auto pt-6 border-t border-slate-100 flex justify-end">
+                <button onClick={() => setSelectedFactor(null)} className="px-6 py-3 rounded-xl bg-slate-900 text-white font-outfit font-semibold hover:bg-orange-500 shadow-md transition-colors">
+                  Close
+                </button>
+              </div>
             </div>
           </div>
         </div>
