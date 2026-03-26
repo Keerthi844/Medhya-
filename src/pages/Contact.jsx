@@ -101,7 +101,7 @@ export default function Contact() {
               <div className="absolute bottom-0 left-0 w-[45%] h-[30%] bg-blue-600 rounded-bl-[100px] rounded-tr-[100px]"></div>
               
               {/* Foreground Image */}
-              <div className="relative z-10 w-[88%] h-[80%] rounded-[2rem] overflow-hidden border-[8px] border-white shadow-xl bg-slate-200">
+              <div className="relative z-10 w-[92%] sm:w-[88%] h-[75%] sm:h-[80%] rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden border-4 sm:border-[8px] border-white shadow-lg sm:shadow-xl bg-slate-200">
                 <img src="/images/contact-header.png" alt="Get In Touch" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
               </div>
             </div>
@@ -118,7 +118,7 @@ export default function Contact() {
              <p className="text-lg text-slate-600 max-w-2xl mx-auto">Fill out the form below and our advisors will reach out shortly.</p>
            </div>
            
-           <div className="bg-white border border-slate-200 p-8 md:p-12 rounded-3xl shadow-xl opacity-0 translate-y-8 transition-all duration-700 delay-200" data-scroll-animate="true">
+           <div className="bg-white border border-slate-200 p-5 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl shadow-lg sm:shadow-xl opacity-0 translate-y-8 transition-all duration-700 delay-200" data-scroll-animate="true">
               <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="flex flex-col gap-2">
@@ -165,7 +165,7 @@ export default function Contact() {
       </section>
 
       {/* Office location visual */}
-      <section className="w-full h-[500px] bg-slate-100 relative overflow-hidden opacity-0 transition-opacity duration-1000" data-scroll-animate="true">
+      <section className="w-full h-[300px] sm:h-[400px] md:h-[500px] bg-slate-100 relative overflow-hidden opacity-0 transition-opacity duration-1000" data-scroll-animate="true">
         <img src="/images/contact-exterior.png" alt="Medhya Office Exterior" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent flex flex-col justify-end p-12 lg:p-24">
           <h2 className="text-4xl font-outfit font-bold text-white mb-4">Visit Our Headquarters</h2>

@@ -71,7 +71,7 @@ export default function Careers() {
       {/* Why Join Us */}
       <section className="py-8 lg:py-12 bg-white">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center">
             <div data-scroll-animate="true" className=" opacity-0 translate-y-8 transition-all duration-700">
               <h2 className="text-4xl md:text-5xl font-outfit font-bold text-slate-900 mb-6">
                 Empower Your <span className="bg-gradient-to-br from-blue-800 to-blue-600 bg-clip-text text-transparent">Career</span>
@@ -99,7 +99,7 @@ export default function Careers() {
               </ul>
             </div>
 
-            <div className="relative h-[400px] w-full rounded-3xl overflow-hidden opacity-0 translate-y-8 transition-all duration-700 delay-200 group">
+            <div className="relative h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] w-full rounded-2xl sm:rounded-3xl overflow-hidden opacity-0 translate-y-8 transition-all duration-700 delay-200 group">
                <img src="/images/team-collaboration.png" alt="Team Collaboration" className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] ease-in-out group-hover:scale-110" />
                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent pointer-events-none transition-colors duration-500 group-hover:bg-slate-900/40"></div>
                

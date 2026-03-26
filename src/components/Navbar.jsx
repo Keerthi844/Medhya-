@@ -27,7 +27,13 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm' : 'bg-transparent'}`}>
+<nav
+  className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+    scrolled
+      ? 'bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm'
+      : 'bg-gradient-to-b from-white-500/80 via-green-800/50 to-transparent'
+  }`}
+>
         <div className="container mx-auto px-6 h-20 flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2 text-slate-900 hover:opacity-80 transition-opacity">
             <TrendingUp className="text-blue-600" size={28} />
@@ -63,12 +69,12 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div className={`lg:hidden absolute top-20 left-0 w-full bg-slate-50 border-b border-slate-200 shadow-xl transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-4'}`}>
-          <div className="flex flex-col p-6 gap-4">
+          <div className="flex flex-col p-4 sm:p-5 md:p-6 gap-3 sm:gap-4">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.path}
-                className={`text-lg font-medium pb-2 border-b border-slate-200 ${
+                className={`text-base sm:text-lg font-medium pb-2 border-b border-slate-200 ${
                   location.pathname === link.path ? 'text-blue-600 border-blue-200' : 'text-slate-600'
                 }`}
                 onClick={() => setIsOpen(false)}

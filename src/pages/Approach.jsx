@@ -59,19 +59,29 @@ export default function Approach() {
 
   return (
     <div className="w-full relative">
-      <section className="pt-28 pb-10 bg-slate-900 border-b border-slate-800 relative overflow-hidden">
-        <div className="absolute top-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-600/20 to-transparent"></div>
-        <div className="container mx-auto px-6 relative z-10 text-center">
-          <h1 className="text-[clamp(2.5rem,5vw,4rem)] font-outfit font-extrabold text-white mb-6 animate-[fadeIn_0.8s_ease-out_forwards]">
-            Our <span className="bg-gradient-to-br from-[#f97316] to-[#fb923c] bg-clip-text text-transparent">Approach</span>
-          </h1>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto animate-[fadeIn_0.8s_ease-out_forwards] opacity-0" style={{ animationDelay: '200ms' }}>
-            How we translate complex financial challenges into sustainable success.<br/>
-            A disciplined, strategic methodology focused on transparency and results.
-          </p>
-        </div>
-      </section>
+    <section className="pt-6 pb-6 bg-slate-900 border-b border-slate-800 relative overflow-hidden">
+
+  {/* Background */}
+  <div className="absolute top-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+  <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-600/20 to-transparent"></div>
+
+  <div className="container mx-auto px-4 relative z-10 text-center">
+
+    {/* Title */}
+    <h1 className="text-[clamp(1.8rem,4vw,2.8rem)] font-outfit font-bold text-white mb-3">
+      Our{" "}
+      <span className="bg-gradient-to-br from-blue-400 to-blue-600 bg-clip-text text-transparent">
+        Approach
+      </span>
+    </h1>
+
+    {/* Description */}
+    <p className="text-base text-slate-300 max-w-xl mx-auto leading-relaxed">
+      Turning complex financial challenges into structured, scalable, and sustainable outcomes.
+    </p>
+
+  </div>
+</section>
 
       {/* Our Approach Section */}
       <section className="py-10 lg:py-16 bg-white">

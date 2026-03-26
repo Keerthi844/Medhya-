@@ -103,7 +103,7 @@ export default function About() {
       {/* Intro Section */}
       <section className="py-8 lg:py-12 bg-white">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center">
             <div data-scroll-animate="true" className=" opacity-0 translate-y-8 transition-all duration-700">
               <h2 className="text-4xl md:text-5xl font-outfit font-bold text-slate-900 mb-8 leading-tight">
                 Your Trusted <br /><span className="bg-gradient-to-br from-blue-800 to-blue-600 bg-clip-text text-transparent">Financial Partner</span>
@@ -116,22 +116,22 @@ export default function About() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-6 opacity-0 translate-y-8 transition-all duration-700 delay-200">
-              <div className="bg-slate-50 border border-slate-200 p-8 rounded-3xl text-center shadow-sm flex flex-col justify-center">
-                <div className="text-4xl lg:text-5xl font-outfit font-extrabold text-blue-600 mb-2">100+</div>
-                <div className="text-slate-600 font-medium">Startups Advised</div>
+            <div className="grid grid-cols-2 gap-4 sm:gap-6 opacity-0 translate-y-8 transition-all duration-700 delay-200">
+              <div className="bg-slate-50 border border-slate-200 p-4 sm:p-5 md:p-6 lg:p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl text-center shadow-sm flex flex-col justify-center">
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-outfit font-extrabold text-blue-600 mb-2">100+</div>
+                <div className="text-xs sm:text-sm text-slate-600 font-medium">Startups Advised</div>
               </div>
-              <div className="bg-slate-50 border border-slate-200 p-8 rounded-3xl text-center shadow-sm flex flex-col justify-center">
-                <div className="text-4xl lg:text-5xl font-outfit font-extrabold text-blue-600 mb-2">50+</div>
-                <div className="text-slate-600 font-medium">VC/PE Connections</div>
+              <div className="bg-slate-50 border border-slate-200 p-4 sm:p-5 md:p-6 lg:p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl text-center shadow-sm flex flex-col justify-center">
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-outfit font-extrabold text-blue-600 mb-2">50+</div>
+                <div className="text-xs sm:text-sm text-slate-600 font-medium">VC/PE Connections</div>
               </div>
-              <div className="bg-slate-50 border border-slate-200 p-8 rounded-3xl text-center shadow-sm flex flex-col justify-center">
-                <div className="text-3xl lg:text-4xl font-outfit font-extrabold text-blue-600 mb-2">Growth</div>
-                <div className="text-slate-600 font-medium">Focused Strategies</div>
+              <div className="bg-slate-50 border border-slate-200 p-4 sm:p-5 md:p-6 lg:p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl text-center shadow-sm flex flex-col justify-center">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-outfit font-extrabold text-blue-600 mb-2">Growth</div>
+                <div className="text-xs sm:text-sm text-slate-600 font-medium">Focused Strategies</div>
               </div>
-              <div className="bg-slate-50 border border-slate-200 p-8 rounded-3xl text-center shadow-sm flex flex-col justify-center">
-                <div className="text-2xl lg:text-3xl font-outfit font-extrabold text-blue-600 mb-2">End-to-End</div>
-                <div className="text-slate-600 font-medium">Financial Solutions</div>
+              <div className="bg-slate-50 border border-slate-200 p-4 sm:p-5 md:p-6 lg:p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl text-center shadow-sm flex flex-col justify-center">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-outfit font-extrabold text-blue-600 mb-2">End-to-End</div>
+                <div className="text-xs sm:text-sm text-slate-600 font-medium">Financial Solutions</div>
               </div>
             </div>
           </div>
@@ -227,7 +227,7 @@ export default function About() {
       {selectedFactor && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
           <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onClick={() => setSelectedFactor(null)}></div>
-          <div className="relative bg-white w-full max-w-xl rounded-3xl shadow-2xl p-8 md:p-10 animate-[fadeIn_0.3s_ease-out_forwards] max-h-[90vh] overflow-y-auto custom-scrollbar">
+          <div className="relative bg-white w-full max-w-xl rounded-2xl sm:rounded-3xl shadow-2xl p-5 sm:p-6 md:p-8 md:p-10 animate-[fadeIn_0.3s_ease-out_forwards] max-h-[90vh] overflow-y-auto custom-scrollbar">
             <button
               onClick={() => setSelectedFactor(null)}
               className="absolute top-5 right-5 p-2 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-slate-900 transition-colors"

@@ -110,24 +110,27 @@ const stepperData = {
     desc: 'As corporate finance transactions become increasingly complex, organizations are in search to find effective solutions to manage them with a great deal of precision and expertise. Our diverse teams combine integrated global solutions with extensive industry experience to give our clients the most effective solutions.',
     blocks: [
       {
-        title: '1. Valuation',
+        title: 'Valuation',
         desc: 'Business valuation is critical for transactions including fund raising, mergers & acquisitions (M&A), sale of businesses, strategic business decisions like family or shareholders disputes, voluntary value assessment and also for regulatory compliance, tax and financial reporting purposes in India under RBI, Income Tax, Companies Act, and SEBI Laws etc. Better Corporate Governance is also leading to requirement of independent Business Valuations.',
         image: '/images/business-discussion.png',
         reverse: false,
+        imageHeight: true,
         bullets: ['Business Valuation', 'Intangible/ Brand Valuations', 'M&A/ Share Swap Valuations', 'Valuation for Acquisitions (Buy Side and Sell Side)', 'ESOP and Sweat Equity Valuation', 'FDI / ODI Valuations', 'Ind AS Valuation', 'Exit Valuation/ Valuation for Delisting of Shares from Stock exchange', 'Convertible/Complex Instrument Valuation', 'Start-up Valuation', 'SEBI/Stock Exchange Valuation', 'Derivative Valuations', 'Build / Review of Financial Models']
       },
       {
-        title: '2. Due Diligence Services',
+        title: 'Due Diligence Services',
         desc: 'Due diligence refers to the process of research and analysis that is done before an acquisition, investment, business partnership or bank loan in order to determine the value of the subject of the due diligence or whether there are any major issues or potential issues. The prospective acquirer / investor should obtain all the necessary information within the predetermined time and make sure that he makes a good deal and not a costly mistake. Our dedicated transaction advisory and due diligence teams can assist with financial, legal, tax and environmental due diligence and business analysis.',
         image: '/images/office-workspace.png',
         reverse: true,
+        imageHeight: true,
         bullets: ['Corporate Due diligence', 'Financial Due diligence', 'Tax Due Diligence', 'Asset Purchase Due diligence', 'Commercial Due diligence', 'Investment Due diligence', 'Business Due diligence']
       },
       {
-        title: '3. Mergers and Acquisition support',
+        title: 'Mergers and Acquisition support',
         desc: 'A Merger or Acquisition (M&A) can add considerable value to a business, but making sure that each stage of the transaction process—from valuation to negotiation and completion—is successful demands considerable experience and knowledge. We can assist you by assessing the strategic fit of a business by analyzing all aspects of a transaction.',
         image: '/images/team-collaboration.png',
         reverse: false,
+        imageHeight: true,
         bullets: ['Identifying key targets locally and internationally', 'Valuation', 'Transaction structuring, and negotiation', 'Advice on financing', 'Supervising due diligence, legal and other issues', 'Developed detailed plans for executing strategy', 'Staffing models, organizational structure', 'Workforce needs analysis and modeling', 'Change management', 'Culture visioning and transformation']
       }
     ]
@@ -137,20 +140,20 @@ const stepperData = {
     desc: 'Comprehensive risk management solutions to secure and streamline your business operations.',
     blocks: [
       {
-        title: '1. Business Process Redesign',
+        title: 'Business Process Redesign',
         desc: 'We help businesses design their key business processes considering “best practices” and “benchmarks”, help operations become more efficient, speed up work flows and improve Management Information Systems.',
         image: '/images/business-discussion.png',
         reverse: false,
         bullets: ['Prepare Standard Operating Procedures (SOP)', 'Accounts Manual', 'Systems Manual', 'Chart of Accounts development and standardization']
       },
       {
-        title: '2. Information Technology Advisory services',
+        title: 'Information Technology Advisory services',
         image: '/images/team-collaboration.png',
         reverse: true,
         bullets: ['Internal Audit of IT Systems', 'Business Continuity & Disaster Recovery Plan', 'Regulation and Compliance Reviews', 'General IT Control Testing', 'Cyber Risk Services', 'ERP Implementation Review', 'Application and Technical audit', 'IT Strategy and Planning review', 'Digital Transformation']
       },
       {
-        title: '3. SOX Compliance',
+        title: 'SOX Compliance',
         desc: 'SOX provides the framework for organizations for financial recording and reporting, which in turn improves many aspects of the organization. SOX compliance help companies report that the financial reports are more predictable, which makes stockholders contended. Companies also report that it makes access to capital markets much easier due to their improved financial reporting.',
         image: '/images/office-workspace.png',
         reverse: false,
@@ -195,7 +198,7 @@ const stepperSteps = [
 export default function Services() {
   const location = useLocation();
   const [selectedService, setSelectedService] = useState(null);
-  
+
   const [activeStep, setActiveStep] = useState('transaction-advisory');
   const detailsRef = useRef(null);
 
@@ -227,7 +230,7 @@ export default function Services() {
     } else {
       window.scrollTo(0, 0);
     }
-    
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -242,7 +245,7 @@ export default function Services() {
     });
 
     return () => observer.disconnect();
-  }, [location]); 
+  }, [location]);
 
   // Re-observe dynamic content when activeStep changes
   useEffect(() => {
@@ -268,35 +271,45 @@ export default function Services() {
   return (
     <div className="w-full relative">
       {/* Header */}
-      <section className="pt-32 pb-16 bg-slate-900 border-b border-slate-800 relative overflow-hidden">
+      <section className="pt-6 pb-4 bg-slate-900 border-b border-slate-800 relative overflow-hidden">
+
+        {/* Background */}
         <div className="absolute top-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-600/20 to-transparent"></div>
-        <div className="container mx-auto px-6 relative z-10 text-center">
-          <h1 className="text-[clamp(2.5rem,5vw,4rem)] font-outfit font-extrabold text-white mb-6 animate-[fadeIn_0.8s_ease-out_forwards]">
-            Our Service <span className="bg-gradient-to-br from-blue-400 to-blue-600 bg-clip-text text-transparent">Offerings</span>
+
+        <div className="container mx-auto px-4 relative z-10 text-center">
+
+          {/* Title */}
+          <h1 className="text-[clamp(2rem,4vw,3rem)] font-outfit font-bold text-white mb-3">
+            Our Service{" "}
+            <span className="bg-gradient-to-br from-blue-400 to-blue-600 bg-clip-text text-transparent">
+              Offerings
+            </span>
           </h1>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto animate-[fadeIn_0.8s_ease-out_forwards] opacity-0" style={{ animationDelay: '200ms' }}>
-            A complete ecosystem of advisory and execution to accelerate your growth.
+
+          {/* Description */}
+          <p className="text-base text-slate-300 max-w-xl mx-auto leading-relaxed">
+            A complete ecosystem of advisory and execution to accelerate your growth.Comprehensive financial solutions designed to drive growth, efficiency, and long-term value.
           </p>
+
         </div>
       </section>
-
       {/* Main Service Cards Grid (Restored exactly to 6 pristine textual cards) */}
       <section className="py-20 lg:py-28 bg-slate-50 relative overflow-hidden border-b border-slate-200">
         <div className="container mx-auto px-6 max-w-7xl">
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
             {coreCards.map((service, idx) => (
-              <div 
-                key={service.id} 
+              <div
+                key={service.id}
                 id={`service-${service.id}`}
                 onClick={() => setSelectedService(service)}
-                className="group relative bg-white border border-slate-200 rounded-[2rem] p-8 lg:p-10 cursor-pointer shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 opacity-0 translate-y-8 animate-on-scroll overflow-hidden flex flex-col h-full min-h-[380px]"
+                className="group relative bg-white border border-slate-200 rounded-[1.5rem] sm:rounded-[2rem] p-5 sm:p-6 md:p-8 lg:p-10 cursor-pointer shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 opacity-0 translate-y-8 animate-on-scroll overflow-hidden flex flex-col h-full min-h-[320px] sm:min-h-[380px]"
                 style={{ transitionDelay: `${idx * 100}ms` }}
               >
                 {/* Subtle top border accent */}
                 <div className={`absolute top-0 left-0 w-full h-2 ${service.themeColor} opacity-80 group-hover:opacity-100 transition-opacity`}></div>
-                
+
                 {/* Background faint tint on hover */}
                 <div className={`absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity duration-700 ${service.themeColor}`}></div>
 
@@ -304,16 +317,16 @@ export default function Services() {
                   <div className={`w-16 h-16 rounded-[1.25rem] flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-500 ${service.themeColor} text-white`}>
                     {service.icon}
                   </div>
-                  
+
                   <h3 className="text-[1.35rem] xl:text-[1.5rem] font-outfit font-extrabold text-slate-800 mb-4 tracking-tight leading-tight group-hover:text-slate-900 transition-colors">
                     {service.title}
                   </h3>
-                  
+
                   <p className="text-slate-500 leading-relaxed text-[15px] xl:text-base group-hover:text-slate-600 transition-colors">
                     {service.shortDesc}
                   </p>
                 </div>
-                
+
                 <div className="relative z-10 mt-8 pt-6 border-t border-slate-100 flex items-center text-slate-500 font-semibold text-sm xl:text-[15px] uppercase tracking-wider group-hover:text-slate-900 transition-colors">
                   Explore Service <ArrowRight size={18} className="ml-2 group-hover:translate-x-2 transition-transform duration-300" />
                 </div>
@@ -327,7 +340,7 @@ export default function Services() {
       {/* 2-Step Interactive Capability Stepper Section */}
       <section ref={detailsRef} className="py-20 lg:py-32 bg-white scroll-mt-0 relative overflow-hidden">
         <div className="container mx-auto px-6 max-w-[1400px]">
-          
+
           <div className="text-center mb-10 lg:mb-16 animate-on-scroll opacity-0 translate-y-8">
             <h2 className="text-[clamp(2.5rem,5vw,3.5rem)] font-outfit font-extrabold text-slate-900 mb-6 tracking-tight">
               In-Depth <span className="bg-gradient-to-br from-[#52b12c] to-[#7adb48] bg-clip-text text-transparent">Capabilities</span>
@@ -346,7 +359,7 @@ export default function Services() {
 
               return (
                 <React.Fragment key={step.id}>
-                  <div 
+                  <div
                     onClick={() => handleStepClick(step.id)}
                     className="relative z-10 flex flex-col items-center cursor-pointer group"
                   >
@@ -356,13 +369,15 @@ export default function Services() {
                       ${isCompleted ? 'bg-[#52b12c] border-[#52b12c]' : ''}
                       ${!isActive && !isCompleted ? 'border-slate-300 group-hover:border-[#52b12c]/50' : ''}
                     `}>
-                       {isCompleted ? <Check size={32} className="text-white" strokeWidth={3.5} /> : <span className={`font-bold text-2xl md:text-3xl ${isActive ? 'text-[#52b12c]' : 'text-slate-400'}`}>{idx + 1}</span>}
+                      {isCompleted ? <Check size={32} className="text-white" strokeWidth={3.5} /> : <span className={`font-bold text-2xl md:text-3xl ${isActive ? 'text-[#52b12c]' : 'text-slate-400'}`}>{idx + 1}</span>}
                     </div>
 
                     {/* The Label */}
-                    <span className={`absolute top-24 md:top-28 md:w-max min-w-[150px] text-center font-outfit font-extrabold uppercase tracking-widest transition-all duration-300 px-2
-                      ${isActive ? 'text-[#429521] text-[13px] md:text-[15px] translate-y-1' : 'text-slate-400 text-[11px] md:text-[13px]'}
-                    `}>
+                    <span
+                      className={`absolute top-36 md:top-20 md:w-max min-w-[150px] text-center font-outfit font-extrabold uppercase tracking-widest transition-all duration-300 px-2
+    ${isActive ? 'text-[#429521] text-[13px] md:text-[15px] translate-y-1' : 'text-slate-400 text-[11px] md:text-[13px]'}
+  `}
+                    >
                       {step.title}
                     </span>
                   </div>
@@ -381,20 +396,20 @@ export default function Services() {
           {/* Active Tab Content Renderer */}
           {activeData && (
             <div className="max-w-[1400px] mx-auto animate-[fadeIn_0.5s_ease-out_forwards]">
-              <div className="text-center mb-10 animate-on-tab opacity-0 translate-y-8">
+              <div className="text-center mb-10 lg:mb-20 animate-on-tab opacity-0 translate-y-8">
                 <h3 className="text-4xl lg:text-5xl font-outfit font-extrabold text-slate-900 mb-6 tracking-tight drop-shadow-sm">{activeData.title}</h3>
                 {activeData.desc && <p className="text-slate-600 text-lg lg:text-xl max-w-4xl mx-auto leading-relaxed">{activeData.desc}</p>}
               </div>
 
-              <div className="space-y-24 lg:space-y-32">
+              <div className="space-y-12 lg:space-y-16">
                 {activeData.blocks.map((block, idx) => (
-                  <div key={idx} className={`flex flex-col ${block.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-10 lg:gap-20 animate-on-tab opacity-0 translate-y-8`}>
-                    
+                  <div key={idx} className={`flex flex-col ${block.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-6 lg:gap-12 animate-on-tab opacity-0 translate-y-8`}>
+
                     <div className="w-full lg:w-1/2">
                       <div className="inline-flex items-center justify-center w-16 h-16 rounded-[1.25rem] bg-[#52b12c]/10 text-[#52b12c] mb-8 font-outfit font-extrabold text-3xl border border-[#52b12c]/20 shadow-sm">{idx + 1}</div>
                       <h3 className="text-3xl lg:text-4xl font-outfit font-bold text-slate-900 mb-6 tracking-tight leading-tight">{block.title}</h3>
                       {block.desc && <p className="text-slate-600 text-[16px] lg:text-[19px] leading-relaxed mb-10">{block.desc}</p>}
-                      
+
                       {block.bullets && block.bullets.length > 0 && (
                         <div className="bg-white p-8 lg:p-10 rounded-3xl border border-slate-100 shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:-translate-y-1 transition-transform duration-500">
                           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-5 gap-x-8">
@@ -407,12 +422,12 @@ export default function Services() {
                           </ul>
                         </div>
                       )}
-                      
+
                       {block.customRender}
                     </div>
 
                     <div className="w-full lg:w-1/2">
-                      <div className="rounded-[2.5rem] lg:rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.08)] relative aspect-[4/3] group border-[6px] border-white">
+                      <div className={`rounded-[2.5rem] lg:rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.08)] relative ${block.imageHeight ? 'aspect-[3/4]' : 'aspect-[4/3]'} group border-[6px] border-white`}>
                         <img src={block.image} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s] ease-out" />
                         <div className="absolute inset-0 bg-[#52b12c]/5 mix-blend-multiply group-hover:bg-transparent transition-colors duration-700"></div>
                         <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-[2.5rem] lg:rounded-[3rem]"></div>
@@ -430,16 +445,16 @@ export default function Services() {
       {selectedService && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-8 opacity-0 animate-[fadeIn_0.3s_ease-out_forwards]">
           <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-md transition-opacity cursor-pointer" onClick={() => setSelectedService(null)}></div>
-          
+
           <div className="relative bg-white w-full max-w-6xl max-h-[95vh] sm:max-h-[90vh] rounded-[2rem] shadow-2xl overflow-hidden flex flex-col md:flex-row translate-y-8 animate-[slideUp_0.4s_ease-out_forwards] border border-slate-200">
-            
+
             {/* Image Section */}
             <div className="w-full md:w-5/12 aspect-video md:aspect-auto md:h-full relative shrink-0 hidden md:block">
               <img src={selectedService.image} alt={selectedService.title} className="w-full h-full object-cover" />
               <div className={`absolute inset-0 opacity-80 mix-blend-multiply ${selectedService.themeColor}`}></div>
               <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 via-slate-900/40 to-transparent"></div>
-              
-              <div className="absolute bottom-12 left-10 right-10 text-white text-shadow-sm">
+
+              <div className="absolute bottom-6 sm:bottom-8 md:bottom-12 left-6 sm:left-8 md:left-10 right-6 sm:right-8 md:right-10 text-white text-shadow-sm">
                 <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-white/20 backdrop-blur-md border border-white/30 shadow-lg">
                   {React.cloneElement(selectedService.icon, { className: "text-white", size: 36 })}
                 </div>
@@ -459,36 +474,36 @@ export default function Services() {
                 <h2 className="text-2xl font-outfit font-bold text-slate-900 leading-tight pr-8">{selectedService.title}</h2>
               </div>
               <button onClick={() => setSelectedService(null)} className="absolute top-5 right-5 md:top-8 md:right-8 p-2 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-slate-900 hover:rotate-90 transition-all z-20 shadow-sm border border-slate-200"><X size={24} /></button>
-              
+
               <div className="pr-1 md:pr-4 flex-grow">
-                  <div className="mb-4">
-                    <h4 className="text-xl md:text-2xl font-outfit font-bold text-slate-900 mb-6 flex items-center gap-3">
-                      <div className={`w-1.5 h-6 rounded-full shadow-sm ${selectedService.themeColor}`}></div>
-                      Key Capabilities
-                    </h4>
-                    
-                    {selectedService.features && selectedService.features.length > 0 && (
-                      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
-                        {selectedService.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-start gap-4 text-slate-700 text-[15px] font-medium bg-slate-50 shadow-[0_3px_15px_rgba(0,0,0,0.03)] p-4 rounded-xl border border-slate-100 leading-snug hover:-translate-y-1 transition-all group">
-                            <div className={`w-3 h-3 shrink-0 rounded-full mt-1.5 shadow-sm ${selectedService.themeColor} group-hover:scale-125 transition-transform border border-white`}></div>
-                            <span className="flex-1">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
+                <div className="mb-4">
+                  <h4 className="text-xl md:text-2xl font-outfit font-bold text-slate-900 mb-6 flex items-center gap-3">
+                    <div className={`w-1.5 h-6 rounded-full shadow-sm ${selectedService.themeColor}`}></div>
+                    Key Capabilities
+                  </h4>
+
+                  {selectedService.features && selectedService.features.length > 0 && (
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
+                      {selectedService.features.map((feature, idx) => (
+                        <li key={idx} className="flex items-start gap-4 text-slate-700 text-[15px] font-medium bg-slate-50 shadow-[0_3px_15px_rgba(0,0,0,0.03)] p-4 rounded-xl border border-slate-100 leading-snug hover:-translate-y-1 transition-all group">
+                          <div className={`w-3 h-3 shrink-0 rounded-full mt-1.5 shadow-sm ${selectedService.themeColor} group-hover:scale-125 transition-transform border border-white`}></div>
+                          <span className="flex-1">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </div>
-              
+
               <div className="mt-8 pt-6 border-t border-slate-100 flex justify-end shrink-0 sticky bottom-0 bg-gradient-to-t from-white via-white to-transparent pb-2 z-10">
                 {selectedService.id === 'transaction-advisory' ? (
-                   <button onClick={() => { setSelectedService(null); handleStepClick('transaction-advisory'); }} className={`px-8 py-3.5 rounded-xl text-white font-outfit font-bold tracking-wide hover:shadow-xl hover:-translate-y-0.5 transition-all w-full sm:w-auto text-center bg-[#52b12c]`}>
-                      See In-Depth Details Below
-                   </button>
+                  <button onClick={() => { setSelectedService(null); handleStepClick('transaction-advisory'); }} className={`px-8 py-3.5 rounded-xl text-white font-outfit font-bold tracking-wide hover:shadow-xl hover:-translate-y-0.5 transition-all w-full sm:w-auto text-center bg-[#52b12c]`}>
+                    See In-Depth Details Below
+                  </button>
                 ) : (
-                   <button onClick={() => setSelectedService(null)} className={`px-8 py-3.5 rounded-xl text-white font-outfit font-bold tracking-wide hover:shadow-xl hover:-translate-y-0.5 transition-all w-full sm:w-auto text-center ${selectedService.themeColor}`}>
-                     Close Modal
-                   </button>
+                  <button onClick={() => setSelectedService(null)} className={`px-8 py-3.5 rounded-xl text-white font-outfit font-bold tracking-wide hover:shadow-xl hover:-translate-y-0.5 transition-all w-full sm:w-auto text-center ${selectedService.themeColor}`}>
+                    Close
+                  </button>
                 )}
               </div>
             </div>

@@ -57,14 +57,14 @@ export default function Team() {
       {/* Team Grid */}
       <section className="py-8 lg:py-12 bg-white">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-7xl mx-auto">
             {teamMembers.map((member, idx) => (
               <div 
                 key={idx} 
                 className="group flex flex-col items-center p-8 bg-slate-50 border border-slate-200 rounded-3xl hover:-translate-y-2 hover:border-blue-300 hover:shadow-lg transition-all duration-300 opacity-0 translate-y-8" 
                 style={{ transitionDelay: member.delay }}
               >
-                <div className="w-32 h-32 rounded-full bg-white border-2 border-slate-200 mb-6 flex items-center justify-center shadow-sm overflow-hidden group-hover:border-blue-600 transition-all duration-300">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full bg-white border-2 border-slate-200 mb-4 sm:mb-5 md:mb-6 flex items-center justify-center shadow-sm overflow-hidden group-hover:border-blue-600 transition-all duration-300">
                   <img src={`https://i.pravatar.cc/150?img=${idx + 10}&u=${encodeURIComponent(member.name)}`} alt={member.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <h3 className="text-2xl font-outfit font-bold text-slate-900 mb-2 text-center">{member.name}</h3>
