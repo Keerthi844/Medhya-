@@ -143,11 +143,11 @@ export default function Approach() {
             </div>
 
             {/* Images Column */}
-            <div className="relative h-[450px] lg:h-[600px] w-full hidden xl:block perspective-1000">
+            {/* <div className="relative h-[450px] lg:h-[600px] w-full hidden xl:block perspective-1000">
               <img src="/images/office-workspace.png" alt="Workspace" className="absolute top-0 left-0 w-[65%] h-[70%] object-cover border-[8px] border-white rounded-3xl shadow-xl z-10 hover:z-40 transition-all hover:scale-105 duration-500 bg-slate-100" />
               <img src="/images/business-discussion.png" alt="Executives Discussing" className="absolute top-[15%] right-0 w-[50%] h-[50%] object-cover border-[8px] border-white rounded-3xl shadow-lg z-20 hover:z-40 transition-all hover:scale-105 duration-500 bg-slate-100" />
               <img src="/images/team-collaboration.png" alt="Team Collaboration" className="absolute bottom-0 left-[15%] w-[65%] h-[45%] object-cover border-[8px] border-white rounded-3xl shadow-xl z-30 hover:z-40 transition-all hover:scale-105 duration-500 bg-slate-100" />
-            </div>
+            </div> */}
 
           </div>
         </div>
