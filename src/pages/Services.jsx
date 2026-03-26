@@ -170,21 +170,21 @@ const stepperData = {
     title: 'Virtual CFO Services',
     desc: 'Expert financial leadership to steer your company toward sustainable growth and operational excellence.',
     blocks: [
-      { title: "1. Financial Advisory", desc: "Expert advisory for strategic growth, M&A, and financial structuring to maximize business value.", image: "/images/office-workspace.png", reverse: false, bullets: ["Strategic Financial Planning", "Capital & Debt Structuring", "M&A Financial Feasibility"] },
-      { title: "2. Financial Projections", desc: "Robust financial modeling to forecast revenue, expenses, and growth scenarios for strategic planning.", image: "/images/business-discussion.png", reverse: true, bullets: ["Revenue Growth Forecasting", "Scenario & Sensitivity Analysis", "Long-term Business Modeling"] },
-      { title: "3. Cash Flow Projections", desc: "Accurate cash flow forecasting to ensure liquidity, manage working capital, and avoid financial crunches.", image: "/images/team-collaboration.png", reverse: false, bullets: ["Working Capital Optimization", "Daily/Weekly Cash Formatting", "Liquidity Risk Management"] },
-      { title: "4. Budgeting", desc: "Comprehensive budgeting frameworks to control costs, set financial targets, and track operational performance.", image: "/images/contact-advisor.png", reverse: true, bullets: ["Department-wise Budgeting", "Zero-based Budgeting", "Quarterly Reforecasting"] },
-      { title: "5. Cost Management", desc: "Strategic cost analysis and reduction initiatives to improve profit margins and operational efficiency.", image: "/images/office-workspace.png", reverse: false, bullets: ["Overhead Cost Reduction", "Process Efficiency Analysis", "Vendor Negotiation Support"] },
-      { title: "6. Audit Support", desc: "End-to-end support for statutory, internal, and tax audits, ensuring compliance and smooth execution.", image: "/images/business-discussion.png", reverse: true, bullets: ["Audit Readiness Check", "Coordination with External Auditors", "Resolving Audit Qualifications"] },
-      { title: "7. Corporate Governance", desc: "Implementing strong governance frameworks to ensure transparency, accountability, and regulatory compliance.", image: "/images/team-collaboration.png", reverse: false, bullets: ["Board Meeting Support", "Ethics & Code of Conduct", "Stakeholder Communication"] },
-      { title: "8. Organizational Structure", desc: "Designing and optimizing organizational structures for better financial control and resource allocation.", image: "/images/contact-advisor.png", reverse: true, bullets: ["Finance Function Transformation", "Role & KPI Definition", "Scalable Team Building"] },
-      { title: "9. Risk Assessment", desc: "Identifying, quantifying, and mitigating financial and operational risks to protect business assets.", image: "/images/office-workspace.png", reverse: false, bullets: ["Enterprise Risk Management", "Mitigation Strategies", "Continuous Monitoring Framework"] },
-      { title: "10. Compliances of the Various Acts Applicable", desc: "Ensuring adherence to all statutory laws, taxation acts, and regulatory requirements relevant to your industry.", image: "/images/business-discussion.png", reverse: true, bullets: ["Direct & Indirect Tax Filing", "FEMA & RBI Approvals", "Secretarial & ROC Filings"] },
-      { title: "11. Internal Control", desc: "Developing and strengthening internal control systems to prevent fraud and operational inefficiencies.", image: "/images/team-collaboration.png", reverse: false, bullets: ["Fraud Prevention Checks", "Delegation of Authority Matrix", "System Access Reviews"] },
-      { title: "12. Accounting Policies and Procedures", desc: "Drafting standardized accounting manuals, policies, and SOPs for consistent financial reporting.", image: "/images/contact-advisor.png", reverse: true, bullets: ["IndAS / IFRS Implementation", "Accounts Manual Drafting", "SOP Development"] },
-      { title: "13. Setting up an Accounting System", desc: "Implementing robust accounting software and ERP systems tailored to your business needs.", image: "/images/office-workspace.png", reverse: false, bullets: ["ERP Evaluation & Selection", "Chart of Accounts Design", "System Integration Support"] },
-      { title: "14. MIS Reporting", desc: "Designing comprehensive Management Information Systems (MIS) for data-driven executive decision making.", image: "/images/business-discussion.png", reverse: true, bullets: ["Customized Dashboards", "Monthly Performance Reviews", "Key Metric Tracking"] },
-      { title: "15. Year End Accounts Closure and Filing", desc: "Managing the complete year-end accounting cycle, finalization of books, and timely statutory filings.", image: "/images/team-collaboration.png", reverse: false, bullets: ["Trial Balance Finalization", "Tax Provisioning & Audit Prep", "Annual Return Filing"] }
+      { title: "Financial Advisory", desc: "Expert advisory for strategic growth, M&A, and financial structuring to maximize business value.Strategic financial advisory services designed to help organizations make informed decisions, optimize performance, and achieve sustainable growth. We provide expert guidance across financial planning, capital structuring, risk management, and long-term value creation.", image: "/images/office-workspace.png", reverse: false, bullets: ["Strategic Financial Planning", "Capital & Debt Structuring", "M&A Financial Feasibility"] },
+      { title: "Financial Projections", desc: "Robust financial modeling to forecast revenue, expenses, and growth scenarios for strategic planning.Comprehensive financial projections to forecast revenue, expenses, and profitability, enabling businesses to plan strategically, attract investors, and make data-driven decisions.", image: "/images/business-discussion.png", reverse: true, bullets: ["Revenue Growth Forecasting", "Scenario & Sensitivity Analysis", "Long-term Business Modeling"] },
+      { title: "Cash Flow Projections", desc: "Accurate cash flow forecasting to ensure liquidity, manage working capital, and avoid financial crunches.Accurate cash flow projections to monitor inflows and outflows, ensuring liquidity, operational stability, and better financial decision-making for sustained business growth.", image: "/images/team-collaboration.png", reverse: false, bullets: ["Working Capital Optimization", "Daily/Weekly Cash Formatting", "Liquidity Risk Management"] },
+      { title: "Budgeting", desc: "Comprehensive budgeting frameworks to control costs, set financial targets, and track operational performance.Structured budgeting solutions to plan, control, and optimize financial resources, ensuring efficient cost management and alignment with business goals.", image: "/images/contact-advisor.png", reverse: true, bullets: ["Department-wise Budgeting", "Zero-based Budgeting", "Quarterly Reforecasting"] },
+      { title: "Cost Management", desc: "Strategic cost analysis and reduction initiatives to improve profit margins and operational efficiency.Strategic cost management solutions to control expenses, improve operational efficiency, and maximize profitability without compromising business performance.", image: "/images/office-workspace.png", reverse: false, bullets: ["Overhead Cost Reduction", "Process Efficiency Analysis", "Vendor Negotiation Support"] },
+      { title: "Audit Support", desc: "End-to-end support for statutory, internal, and tax audits, ensuring compliance and smooth execution.Comprehensive audit support services to ensure accurate financial reporting, regulatory compliance, and smooth coordination with auditors for a seamless audit process.", image: "/images/business-discussion.png", reverse: true, bullets: ["Audit Readiness Check", "Coordination with External Auditors", "Resolving Audit Qualifications"] },
+      { title: "Corporate Governance", desc: "Implementing strong governance frameworks to ensure transparency, accountability, and regulatory compliance.Robust corporate governance frameworks to ensure transparency, accountability, and ethical business practices, enabling sustainable growth and investor confidence.", image: "/images/team-collaboration.png", reverse: false, bullets: ["Board Meeting Support", "Ethics & Code of Conduct", "Stakeholder Communication"] },
+      { title: "Organizational Structure", desc: "Designing and optimizing organizational structures for better financial control and resource allocation.Strategic design and optimization of organizational structures to improve efficiency, clarify roles, and support scalable business growth.", image: "/images/contact-advisor.png", reverse: true, bullets: ["Finance Function Transformation", "Role & KPI Definition", "Scalable Team Building"] },
+      { title: "Risk Assessment", desc: "Identifying, quantifying, and mitigating financial and operational risks to protect business assets.Comprehensive risk assessment services to identify, evaluate, and mitigate potential financial, operational, and strategic risks, ensuring business continuity and informed decision-making.", image: "/images/office-workspace.png", reverse: false, bullets: ["Enterprise Risk Management", "Mitigation Strategies", "Continuous Monitoring Framework"] },
+      { title: "Compliances of the Various Acts Applicable", desc: "Ensuring adherence to all statutory laws, taxation acts, and regulatory requirements relevant to your industry.Comprehensive risk assessment services to identify, evaluate, and mitigate potential financial, operational, and strategic risks, ensuring business continuity and informed decision-making.", image: "/images/business-discussion.png", reverse: true, bullets: ["Direct & Indirect Tax Filing", "FEMA & RBI Approvals", "Secretarial & ROC Filings"] },
+      { title: "Internal Control", desc: "Developing and strengthening internal control systems to prevent fraud and operational inefficiencies.Robust internal control systems to safeguard assets, ensure accurate financial reporting, enhance operational efficiency, and maintain regulatory compliance.", image: "/images/team-collaboration.png", reverse: false, bullets: ["Fraud Prevention Checks", "Delegation of Authority Matrix", "System Access Reviews"] },
+      { title: "Accounting Policies and Procedures", desc: "Drafting standardized accounting manuals, policies, and SOPs for consistent financial reporting.Structured accounting policies and standardized procedures to ensure consistency, accuracy, and compliance in financial reporting and business operations.", image: "/images/contact-advisor.png", reverse: true, bullets: ["IndAS / IFRS Implementation", "Accounts Manual Drafting", "SOP Development"] },
+      { title: "Setting up an Accounting System", desc: "Implementing robust accounting software and ERP systems tailored to your business needs.End-to-end setup of robust accounting systems and processes to ensure accurate financial tracking, compliance, and efficient business operations.", image: "/images/office-workspace.png", reverse: false, bullets: ["ERP Evaluation & Selection", "Chart of Accounts Design", "System Integration Support"] },
+      { title: "MIS Reporting", desc: "Designing comprehensive Management Information Systems (MIS) for data-driven executive decision making.Comprehensive MIS reporting solutions to provide real-time financial and operational insights, enabling data-driven decision-making and improved business performance.", image: "/images/business-discussion.png", reverse: true, bullets: ["Customized Dashboards", "Monthly Performance Reviews", "Key Metric Tracking"] },
+      { title: "Year End Accounts Closure and Filing", desc: "Managing the complete year-end accounting cycle, finalization of books, and timely statutory filings.End-to-end support for closing financial accounts and completing statutory filings, ensuring accuracy, compliance, and timely reporting in line with regulatory requirements.", image: "/images/team-collaboration.png", reverse: false, bullets: ["Trial Balance Finalization", "Tax Provisioning & Audit Prep", "Annual Return Filing"] }
     ]
   }
 };
@@ -352,7 +352,7 @@ export default function Services() {
           </div>
 
           {/* Master Progress Bar / Stepper (2 Steps) */}
-          <div className="w-full flex items-center justify-center max-w-3xl mx-auto mb-10 md:mb-16 relative animate-on-scroll opacity-0 translate-y-8 select-none">
+          <div className="w-full flex items-center justify-center max-w-3xl mx-auto mb-20 md:mb-16 relative animate-on-scroll opacity-0 translate-y-8 select-none">
             {stepperSteps.map((step, idx) => {
               const isActive = activeStep === step.id;
               const isCompleted = idx < activeIndex;
@@ -374,7 +374,7 @@ export default function Services() {
 
                     {/* The Label */}
                     <span
-                      className={`absolute top-36 md:top-20 md:w-max min-w-[150px] text-center font-outfit font-extrabold uppercase tracking-widest transition-all duration-300 px-2
+                      className={`absolute top-20 md:top-20 md:w-max min-w-[150px] text-center font-outfit font-extrabold uppercase tracking-widest transition-all duration-300 px-2
     ${isActive ? 'text-[#429521] text-[13px] md:text-[15px] translate-y-1' : 'text-slate-400 text-[11px] md:text-[13px]'}
   `}
                     >
@@ -403,19 +403,24 @@ export default function Services() {
 
               <div className="space-y-12 lg:space-y-16">
                 {activeData.blocks.map((block, idx) => (
-                  <div key={idx} className={`flex flex-col ${block.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-6 lg:gap-12 animate-on-tab opacity-0 translate-y-8`}>
-
+                  <div
+                    key={idx}
+                    className={`animate-on-tab opacity-0 translate-y-8 flex flex-col ${
+                      block.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'
+                    } gap-6 sm:gap-8 lg:gap-12 items-start lg:items-center`}
+                  >
+                    {/* Content */}
                     <div className="w-full lg:w-1/2">
-                      <div className="inline-flex items-center justify-center w-16 h-16 rounded-[1.25rem] bg-[#52b12c]/10 text-[#52b12c] mb-8 font-outfit font-extrabold text-3xl border border-[#52b12c]/20 shadow-sm">{idx + 1}</div>
-                      <h3 className="text-3xl lg:text-4xl font-outfit font-bold text-slate-900 mb-6 tracking-tight leading-tight">{block.title}</h3>
-                      {block.desc && <p className="text-slate-600 text-[16px] lg:text-[19px] leading-relaxed mb-10">{block.desc}</p>}
+                      <div className="inline-flex items-center justify-center w-12 sm:w-14 h-12 sm:h-14 rounded-lg sm:rounded-[1.25rem] bg-[#52b12c]/10 text-[#52b12c] mb-4 sm:mb-6 lg:mb-8 font-outfit font-bold text-xl sm:text-2xl lg:text-3xl border border-[#52b12c]/20">{idx + 1}</div>
+                      <h3 className="text-2xl sm:text-3xl lg:text-4xl font-outfit font-bold text-slate-900 mb-4 sm:mb-6 lg:mb-6 tracking-tight leading-tight">{block.title}</h3>
+                      {block.desc && <p className="text-slate-600 text-sm sm:text-base lg:text-[16px] lg:text-[19px] leading-relaxed mb-6 sm:mb-8 lg:mb-10">{block.desc}</p>}
 
                       {block.bullets && block.bullets.length > 0 && (
-                        <div className="bg-white p-8 lg:p-10 rounded-3xl border border-slate-100 shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:-translate-y-1 transition-transform duration-500">
-                          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-5 gap-x-8">
+                        <div className="bg-slate-50 lg:bg-white p-4 sm:p-5 lg:p-8 lg:p-10 rounded-xl lg:rounded-3xl border border-slate-100 shadow-[0_3px_15px_rgba(0,0,0,0.03)] lg:shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:-translate-y-1 transition-transform duration-500">
+                          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 sm:gap-y-4 lg:gap-y-5 gap-x-3 sm:gap-x-6 lg:gap-x-8">
                             {block.bullets.map((item, i) => (
-                              <li key={i} className="flex items-start gap-4 text-[15px] font-medium text-slate-700 leading-snug group cursor-default">
-                                <div className="w-3 h-3 rounded-full bg-[#52b12c] mt-1 shrink-0 shadow-md group-hover:scale-125 transition-transform duration-300"></div>
+                              <li key={i} className="flex items-start gap-2 sm:gap-3 lg:gap-4 text-xs sm:text-sm lg:text-[15px] font-medium text-slate-700 leading-snug group cursor-default">
+                                <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 lg:w-3 lg:h-3 rounded-full bg-[#52b12c] mt-1 sm:mt-1.5 lg:mt-1 shrink-0 shadow-md group-hover:scale-125 transition-transform duration-300"></div>
                                 <span className="flex-1">{item}</span>
                               </li>
                             ))}
@@ -426,11 +431,14 @@ export default function Services() {
                       {block.customRender}
                     </div>
 
+                    {/* Image */}
                     <div className="w-full lg:w-1/2">
-                      <div className={`rounded-[2.5rem] lg:rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.08)] relative ${block.imageHeight ? 'aspect-[3/4]' : 'aspect-[4/3]'} group border-[6px] border-white`}>
-                        <img src={block.image} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s] ease-out" />
+                      <div className={`rounded-xl sm:rounded-2xl lg:rounded-[2.5rem] lg:rounded-[3rem] overflow-hidden shadow-lg lg:shadow-[0_20px_50px_rgba(0,0,0,0.08)] relative ${
+                        block.imageHeight ? 'aspect-[3/4]' : 'aspect-[4/3]'
+                      } group border border-slate-200 lg:border-[6px] lg:border-white`}>
+                        <img src={block.image} alt={block.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s] ease-out" />
                         <div className="absolute inset-0 bg-[#52b12c]/5 mix-blend-multiply group-hover:bg-transparent transition-colors duration-700"></div>
-                        <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-[2.5rem] lg:rounded-[3rem]"></div>
+                        <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-xl sm:rounded-2xl lg:rounded-[2.5rem] lg:rounded-[3rem]"></div>
                       </div>
                     </div>
                   </div>
@@ -448,45 +456,53 @@ export default function Services() {
 
           <div className="relative bg-white w-full max-w-6xl max-h-[95vh] sm:max-h-[90vh] rounded-[2rem] shadow-2xl overflow-hidden flex flex-col md:flex-row translate-y-8 animate-[slideUp_0.4s_ease-out_forwards] border border-slate-200">
 
-            {/* Image Section */}
-            <div className="w-full md:w-5/12 aspect-video md:aspect-auto md:h-full relative shrink-0 hidden md:block">
+            {/* Image Section - Visible on all screens now */}
+            <div className="w-full md:w-5/12 aspect-video md:aspect-auto md:h-full relative shrink-0">
               <img src={selectedService.image} alt={selectedService.title} className="w-full h-full object-cover" />
               <div className={`absolute inset-0 opacity-80 mix-blend-multiply ${selectedService.themeColor}`}></div>
               <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900/90 via-slate-900/40 to-transparent"></div>
 
-              <div className="absolute bottom-6 sm:bottom-8 md:bottom-12 left-6 sm:left-8 md:left-10 right-6 sm:right-8 md:right-10 text-white text-shadow-sm">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-white/20 backdrop-blur-md border border-white/30 shadow-lg">
-                  {React.cloneElement(selectedService.icon, { className: "text-white", size: 36 })}
+              <div className="absolute inset-0 flex flex-col items-start justify-end md:justify-between p-4 sm:p-6 md:p-8 text-white">
+                <div>
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-lg md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 bg-white/20 backdrop-blur-md border border-white/30 shadow-lg">
+                    {React.cloneElement(selectedService.icon, { className: "text-white", size: 28 })}
+                  </div>
                 </div>
-                <h2 className="text-3xl lg:text-4xl font-outfit font-bold leading-tight drop-shadow-lg">{selectedService.title}</h2>
-                <p className="mt-4 text-slate-200 text-lg border-l-2 border-white pl-4 italic">
-                  {selectedService.shortDesc}
-                </p>
+                <div className="md:hidden">
+                  <h2 className="text-2xl sm:text-3xl font-outfit font-bold leading-tight drop-shadow-lg mb-2">{selectedService.title}</h2>
+                  <p className="text-xs sm:text-sm text-slate-200 leading-snug max-w-xs">
+                    {selectedService.shortDesc}
+                  </p>
+                </div>
+                <div className="hidden md:block">
+                  <h2 className="text-3xl lg:text-4xl font-outfit font-bold leading-tight drop-shadow-lg">{selectedService.title}</h2>
+                  <p className="mt-4 text-slate-200 text-lg border-l-2 border-white pl-4 italic max-w-sm">
+                    {selectedService.shortDesc}
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* Content Section */}
-            <div className="w-full md:w-7/12 p-6 sm:p-8 md:p-12 relative flex flex-col overflow-y-auto bg-white custom-scrollbar max-h-[95vh] sm:max-h-[90vh]">
-              <div className="md:hidden flex items-center gap-4 mb-8 pb-6 border-b border-slate-100">
-                <div className={`w-14 h-14 rounded-2xl flex items-center justify-center border shrink-0 shadow-inner ${selectedService.themeColor} text-white`}>
-                  {React.cloneElement(selectedService.icon, { size: 28 })}
-                </div>
-                <h2 className="text-2xl font-outfit font-bold text-slate-900 leading-tight pr-8">{selectedService.title}</h2>
+            <div className="w-full md:w-7/12 p-5 sm:p-8 md:p-12 relative flex flex-col overflow-y-auto bg-white custom-scrollbar max-h-[95vh] sm:max-h-[90vh]">
+              <button onClick={() => setSelectedService(null)} className="absolute top-4 right-4 md:top-8 md:right-8 p-2 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-slate-900 hover:rotate-90 transition-all z-20 shadow-sm border border-slate-200"><X size={24} /></button>
+
+              <div className="md:hidden mb-6 pb-4 border-b border-slate-100">
+                <div className="text-sm font-medium text-[#52b12c] uppercase tracking-wide mb-2">Service Details</div>
               </div>
-              <button onClick={() => setSelectedService(null)} className="absolute top-5 right-5 md:top-8 md:right-8 p-2 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-slate-900 hover:rotate-90 transition-all z-20 shadow-sm border border-slate-200"><X size={24} /></button>
 
               <div className="pr-1 md:pr-4 flex-grow">
-                <div className="mb-4">
-                  <h4 className="text-xl md:text-2xl font-outfit font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <div className="mb-6">
+                  <h4 className="text-lg sm:text-xl md:text-2xl font-outfit font-bold text-slate-900 mb-5 flex items-center gap-3">
                     <div className={`w-1.5 h-6 rounded-full shadow-sm ${selectedService.themeColor}`}></div>
                     Key Capabilities
                   </h4>
 
                   {selectedService.features && selectedService.features.length > 0 && (
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-4">
                       {selectedService.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start gap-4 text-slate-700 text-[15px] font-medium bg-slate-50 shadow-[0_3px_15px_rgba(0,0,0,0.03)] p-4 rounded-xl border border-slate-100 leading-snug hover:-translate-y-1 transition-all group">
-                          <div className={`w-3 h-3 shrink-0 rounded-full mt-1.5 shadow-sm ${selectedService.themeColor} group-hover:scale-125 transition-transform border border-white`}></div>
+                        <li key={idx} className="flex items-start gap-3 text-sm sm:text-[15px] font-medium text-slate-700 bg-slate-50 shadow-[0_3px_15px_rgba(0,0,0,0.03)] p-3 sm:p-4 rounded-lg border border-slate-100 leading-snug hover:-translate-y-1 transition-all group">
+                          <div className={`w-2.5 h-2.5 shrink-0 rounded-full mt-1 shadow-sm ${selectedService.themeColor} group-hover:scale-125 transition-transform border border-white`}></div>
                           <span className="flex-1">{feature}</span>
                         </li>
                       ))}
@@ -495,13 +511,13 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="mt-8 pt-6 border-t border-slate-100 flex justify-end shrink-0 sticky bottom-0 bg-gradient-to-t from-white via-white to-transparent pb-2 z-10">
+              <div className="mt-6 pt-4 border-t border-slate-100 flex justify-end shrink-0 sticky bottom-0 bg-gradient-to-t from-white via-white to-transparent pb-1 z-10">
                 {selectedService.id === 'transaction-advisory' ? (
-                  <button onClick={() => { setSelectedService(null); handleStepClick('transaction-advisory'); }} className={`px-8 py-3.5 rounded-xl text-white font-outfit font-bold tracking-wide hover:shadow-xl hover:-translate-y-0.5 transition-all w-full sm:w-auto text-center bg-[#52b12c]`}>
-                    See In-Depth Details Below
+                  <button onClick={() => { setSelectedService(null); handleStepClick('transaction-advisory'); }} className={`px-4 sm:px-8 py-2.5 sm:py-3.5 rounded-lg sm:rounded-xl text-white font-outfit font-bold tracking-wide hover:shadow-xl hover:-translate-y-0.5 transition-all w-full sm:w-auto text-center text-xs sm:text-sm bg-[#52b12c]`}>
+                    See In-Depth Details
                   </button>
                 ) : (
-                  <button onClick={() => setSelectedService(null)} className={`px-8 py-3.5 rounded-xl text-white font-outfit font-bold tracking-wide hover:shadow-xl hover:-translate-y-0.5 transition-all w-full sm:w-auto text-center ${selectedService.themeColor}`}>
+                  <button onClick={() => setSelectedService(null)} className={`px-4 sm:px-8 py-2.5 sm:py-3.5 rounded-lg sm:rounded-xl text-white font-outfit font-bold tracking-wide hover:shadow-xl hover:-translate-y-0.5 transition-all w-full sm:w-auto text-center text-xs sm:text-sm ${selectedService.themeColor}`}>
                     Close
                   </button>
                 )}
